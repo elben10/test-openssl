@@ -6,56 +6,56 @@ cache:
 
 matrix:
   include:
-#     - name: "Linux: Python 2.7"
-#       os: "linux"
-#       env:
-#         - "PYENV_VERSION=2.7.15"
+    - name: "Linux: Python 2.7"
+      os: "linux"
+      env:
+        - "PYENV_VERSION=2.7.15"
 
-#     - name: "Linux: Python 3.5"
-#       os: "linux"
-#       env:
-#         - "PYENV_VERSION=3.5.6"
+    - name: "Linux: Python 3.5"
+      os: "linux"
+      env:
+        - "PYENV_VERSION=3.5.6"
 
-#     - name: "Linux: Python 3.6"
-#       os: "linux"
-#       env:
-#         - "PYENV_VERSION=3.6.6"
+    - name: "Linux: Python 3.6"
+      os: "linux"
+      env:
+        - "PYENV_VERSION=3.6.6"
 
-#     - name: "Linux: Python 3.7"
-#       os: "linux"
-#       dist: "xenial"
-#       sudo: "true"
-#       env:
-#         - "PYENV_VERSION=3.7.0"
+    - name: "Linux: Python 3.7"
+      os: "linux"
+      dist: "xenial"
+      sudo: "true"
+      env:
+        - "PYENV_VERSION=3.7.0"
 
     - name: "Linux: Python 3.8-dev"
-#       os: "linux"
-#       dist: "xenial"
+      os: "linux"
+      dist: "xenial"
       sudo: "true"
       env:
         - "PYENV_VERSION=3.8-dev"
         - "REQUIRE_SSL=true"
 
-#     - name: "OSX: Python 2.7"
-#       os: "osx"
-#       env:
-#         - "PYENV_VERSION=2.7.15"
+    - name: "OSX: Python 2.7"
+      os: "osx"
+      env:
+        - "PYENV_VERSION=2.7.15"
 
-#     - name: "OSX: Python 3.5"
-#       os: "osx"
-#       env:
-#         - "PYENV_VERSION=3.5.6"
+    - name: "OSX: Python 3.5"
+      os: "osx"
+      env:
+        - "PYENV_VERSION=3.5.6"
 
-#     - name: "OSX: Python 3.6"
-#       os: "osx"
-#       env:
-#         - "PYENV_VERSION=3.6.6"
+    - name: "OSX: Python 3.6"
+      os: "osx"
+      env:
+        - "PYENV_VERSION=3.6.6"
 
-#     - name: "OSX: Python 3.7"
-#       os: "osx"
-#       env:
-#         - "PYENV_VERSION=3.7.0"
-#         - "REQUIRE_SSL=true"
+    - name: "OSX: Python 3.7"
+      os: "osx"
+      env:
+        - "PYENV_VERSION=3.7.0"
+        - "REQUIRE_SSL=true"
 
     - name: "OSX: Python 3.8-dev"
       os: "osx"
@@ -63,10 +63,10 @@ matrix:
         - "PYENV_VERSION=3.8-dev"
         - "REQUIRE_SSL=true"
 
-# allow_failures:
-#   - name:
-#     - "Linux: Python 3.8-dev"
-#     - "OSX: Python 3.8-dev"
+allow_failures:
+  - name:
+    - "Linux: Python 3.8-dev"
+    - "OSX: Python 3.8-dev"
 
 env:
   global:
