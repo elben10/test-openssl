@@ -9,8 +9,5 @@ before_install:
   - wget https://raw.githubusercontent.com/python/cpython/master/Tools/ssl/make_ssl_data.py
   - ls
   - |
-        # clang complains about unused-parameter a lot, redirect stderr
-        python3 Tools/ssl/multissltests.py --steps=library \
-            --base-directory ${HOME}/multissl \
-            --openssl ${OPENSSL} >/dev/null 2>&1
+  # clang complains about unused-parameter a lot, redirect stderr
 - openssl version
