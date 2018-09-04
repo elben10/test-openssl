@@ -2,7 +2,7 @@ language: python
 
 env:
   global:
-  - OPENSSL=1.1.0h
+    - OPENSSL=1.1.0h
 
 matrix:
   include:
@@ -13,9 +13,7 @@ before_install:
   - wget https://raw.githubusercontent.com/python/cpython/master/Tools/ssl/multissltests.py
   - ls
   - |
-  # clang complains about unused-parameter a lot, redirect stderr
-  python3 Tools/ssl/multissltests.py --steps=library \
-    --base-directory ${HOME}/multissl \
-    --openssl ${OPENSSL} >/dev/null 2>&1
-  - openssl version
-  
+     python3 Tools/ssl/multissltests.py --steps=library \
+         --base-directory ${HOME}/multissl \
+         --openssl ${OPENSSL} >/dev/null 2>&1
+
