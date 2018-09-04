@@ -1,4 +1,7 @@
 language: python
+sudo: true
+dist: xenial
+
 cache:
   directories:
     - $HOME/.pyenv_cache
@@ -8,13 +11,6 @@ matrix:
   include:
     - name: "Linux: Python 3.7"
       os: "linux"
-      env:
-        - "PYENV_VERSION=3.7.0"
-
-    - name: "Linux: Python 3.7"
-      os: "linux"
-      dist: xenial
-      sudo: true
       env:
         - "PYENV_VERSION=3.7.0"
 
@@ -36,4 +32,4 @@ install:
   - python --version
 
 script:
-  - tox
+  - ls
