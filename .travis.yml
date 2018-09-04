@@ -91,4 +91,4 @@ install:
   - python --version
 
 script:
-  - tox
+  - ls
