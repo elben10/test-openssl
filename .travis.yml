@@ -4,10 +4,23 @@ language: python
 
 matrix:
   include:
-  - python: "3.7"
-    env: TOXENV=py37
+  - name: "Linux: Python 3.7"
+    os: "linux"
+    env:
+     - "PYENV_VERSION=3.7.0"
+  - name: "Linux: Python 3.7"
+    os: "linux"
+    env:
+     - "PYENV_VERSION=3.7.0"
     dist: xenial
     sudo: true
+    
+install:
+  - git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
+  - eval "$(pyenv init -)"
+  - pyenv install $PYENV_VERSION
+  - pyenv global $PYENV_VERSION
+  - python --version
     
 script:
     - openssl version
