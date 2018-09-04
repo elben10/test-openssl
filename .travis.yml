@@ -10,7 +10,7 @@ matrix:
     - os: osx
 
 before_install:
-  - wget https://raw.githubusercontent.com/python/cpython/master/Tools/ssl/make_ssl_data.py
+  - wget https://raw.githubusercontent.com/python/cpython/master/Tools/ssl/multissltests.py
   - ls
   - |
   # clang complains about unused-parameter a lot, redirect stderr
