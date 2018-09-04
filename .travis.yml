@@ -37,27 +37,32 @@ matrix:
         - "REQUIRE_SSL=true"
 
     - name: "OSX: Python 2.7"
+      language: "generic"
       os: "osx"
       env:
         - "PYENV_VERSION=2.7.15"
 
     - name: "OSX: Python 3.5"
+      language: "generic"
       os: "osx"
       env:
         - "PYENV_VERSION=3.5.6"
 
     - name: "OSX: Python 3.6"
+      language: "generic"
       os: "osx"
       env:
         - "PYENV_VERSION=3.6.6"
 
     - name: "OSX: Python 3.7"
+      language: "generic"
       os: "osx"
       env:
         - "PYENV_VERSION=3.7.0"
         - "REQUIRE_SSL=true"
 
     - name: "OSX: Python 3.8-dev"
+      language: "generic"
       os: "osx"
       env:
         - "PYENV_VERSION=3.8-dev"
