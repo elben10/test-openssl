@@ -1,20 +1,13 @@
+dist: trusty
+sudo: false
 language: python
-
-env:
-  global:
-    - OPENSSL=1.1.0h
 
 matrix:
   include:
-    - os: linux
-    - os: osx
-
-before_install:
-  - wget https://raw.githubusercontent.com/python/cpython/master/Tools/ssl/multissltests.py
-  - |
-      if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
-        ls
-      fi
-
-script: 
-    - ls
+  - python: "3.7"
+    env: TOXENV=py37
+    dist: xenial
+    sudo: true
+    
+script:
+    - openssl version
