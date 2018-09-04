@@ -63,10 +63,10 @@ matrix:
         - "PYENV_VERSION=3.8-dev"
         - "REQUIRE_SSL=true"
 
-    allow_failures:
-     - name:
-         - "Linux: Python 3.8-dev"
-         - "OSX: Python 3.8-dev"
+allow_failures:
+  - name:
+    - "Linux: Python 3.8-dev"
+    - "OSX: Python 3.8-dev"
 
 env:
   global:
