@@ -11,7 +11,7 @@ matrix:
 
 before_install:
   - wget https://raw.githubusercontent.com/python/cpython/master/Tools/ssl/multissltests.py
-  - ls
   - |
-     python3 multissltests.py
-
+      if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
+        ls
+      fi
