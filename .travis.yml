@@ -10,4 +10,5 @@ before_install:
   - ls
   - |
   # clang complains about unused-parameter a lot, redirect stderr
-- openssl version
+  - openssl version
+  
