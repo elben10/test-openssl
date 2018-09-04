@@ -28,6 +28,7 @@ env:
 
 
 install:
+  - openssl version
   - git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
   - eval "$(pyenv init -)"
   - pyenv install $PYENV_VERSION
